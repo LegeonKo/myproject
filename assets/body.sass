@@ -7,62 +7,74 @@ body
   margin: 0
   @include font
 
-.upper-banner
-  @include background
+.container
   margin: 0 auto
-  padding-top: 93px
   width: 1440px
-  height: 806px
 
-  .banner-info
-    display: flex
-    flex-direction: column
-    align-items: center
+.banners-wrap
+  position: relative
 
-    .app-text
-      @include font-size(12px)
-      color: $text-color__primary
-      text-transform: uppercase
+  .upper-banner
+    @include background
+    padding-top: 93px
+    height: 806px
 
-    .site-link
-      @include font-size(96px, 800)
-      @include font('Circe')
-      color: $text-color__secondary
-
-      &__postfix
-        color: $text-color__primary
-
-    .app-description
-      color: $text-color__secondary
-      @include font-size(24px)
-      @include font('Circe')
-      width: 439px
-      text-align: center
-      margin-bottom: 44px
-
-    .main-buttons
+    .banner-info
       display: flex
-      flex-direction: row
+      flex-direction: column
+      align-items: center
 
-      &__primary, &__secondary
-        border: $button-border
-        padding: $button-border__padding
-        border-radius: $button-border__radius
-        text-decoration: $text-decoration
+      .app-text
+        @include font-size(12px)
+        color: $text-color__primary
+        text-transform: uppercase
+
+      .site-link
+        @include font-size(96px, 800)
         @include font('Circe')
-
-      &__primary
-        color: $button-text-color
-        background-color: $background-color__secondary
-        margin-right: 10px
-        @include font-size(20px, 700)
-
-      &__secondary
+        line-height: 1.2
         color: $text-color__secondary
-        @include font-size(20px)
 
-  .background-img
-    display: flex
-    justify-content: space-between
-    background-image: url("/assets/img/rectangle-1.png")
-    background-image: url("/assets/img/rectangle-2.png")
+        &__postfix
+          color: $text-color__primary
+
+      .app-description
+        color: $text-color__secondary
+        @include font-size(24px)
+        @include font('Circe')
+        width: 439px
+        text-align: center
+        margin-bottom: 44px
+
+      .main-buttons
+        display: flex
+        gap: 12px
+
+        &__primary, &__secondary
+          border: $button-border
+          padding: $button-border__padding
+          border-radius: $button-border__radius
+          text-decoration: $text-decoration
+          @include font('Circe')
+
+        &__primary
+          color: $button-text-color
+          background-color: $background-color__secondary
+          @include font-size(20px, 700)
+
+        &__secondary
+          color: $text-color__secondary
+          @include font-size(20px)
+
+  .text-banner
+    height: 839px
+    background-color: #486edc
+    padding-top: 279px
+
+  .text-banner-img
+    position: absolute
+    margin: auto
+    top: 0
+    right: 0
+    bottom: 158px
+    left: 0
