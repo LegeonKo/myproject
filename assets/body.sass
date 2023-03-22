@@ -8,7 +8,7 @@ body
   @include font
 
 .upper-banner
-  background-color: $background-color__primary
+  @include background
   margin: 0 auto
   padding-top: 93px
   width: 1440px
@@ -60,3 +60,9 @@ body
       &__secondary
         color: $text-color__secondary
         @include font-size(20px)
+
+  .background-img
+    display: flex
+    justify-content: space-between
+    background-image: url("/assets/img/rectangle-1.png")
+    background-image: url("/assets/img/rectangle-2.png")
