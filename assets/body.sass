@@ -29,5 +29,34 @@ body
       @include font('Circe')
       color: $text-color__secondary
 
-    .site-postfix
-      color: $text-color__primary
+      &__postfix
+        color: $text-color__primary
+
+    .app-description
+      color: $text-color__secondary
+      @include font-size(24px)
+      @include font('Circe')
+      width: 439px
+      text-align: center
+      margin-bottom: 44px
+
+    .main-buttons
+      display: flex
+      flex-direction: row
+
+      &__primary, &__secondary
+        border: $button-border
+        padding: $button-border__padding
+        border-radius: $button-border__radius
+        text-decoration: $text-decoration
+        @include font('Circe')
+
+      &__primary
+        color: $button-text-color
+        background-color: $background-color__secondary
+        margin-right: 10px
+        @include font-size(20px, 700)
+
+      &__secondary
+        color: $text-color__secondary
+        @include font-size(20px)
