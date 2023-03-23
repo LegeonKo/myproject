@@ -51,9 +51,9 @@ body
         gap: 12px
 
         &__primary, &__secondary
-          border: $button-border
+          border: $border__primary
           padding: $button-border__padding
-          border-radius: $button-border__radius
+          border-radius: $border-radius__primary
           text-decoration: $text-decoration
           @include font('Circe')
 
@@ -66,11 +66,6 @@ body
           color: $text-color__secondary
           @include font-size(20px)
 
-  .text-banner
-    height: 839px
-    background-color: #486edc
-    padding-top: 279px
-
   .text-banner-img
     position: absolute
     margin: auto
@@ -78,3 +73,95 @@ body
     right: 0
     bottom: 158px
     left: 0
+
+  .text-banner
+    height: 839px
+    background-color: $background-color__third
+    padding-top: 279px
+
+    &-header
+      @include font-size(12px)
+      text-transform: uppercase
+      color: $text-color__primary
+      text-align: center
+      margin-bottom: 12px
+
+    &-content
+      @include font('Circe')
+      @include font-size(32px)
+      color: $text-color__secondary
+      text-align: center
+      width: 838px
+      margin: 0 auto 72px
+
+      &__style
+        @include font-size(32px, 700)
+        color: $text-color__primary
+
+    &-info
+      display: flex
+      justify-content: center
+      gap: 40px
+
+      .content-box
+        padding: 24px
+        border: $border__primary
+        border-radius: $border-radius__secondary
+        color: $text-color__secondary
+        @include font('Circe')
+        @include font-size(24px)
+
+        &__header
+          @include font-size(24px, 700)
+          display: flex
+          gap: 11px
+          margin-bottom: 24px
+
+        &-img__first
+          margin-top: -7px
+
+        &-img__second
+          margin-top: -4px
+
+        &__text
+          max-width: 335px
+
+  .arrow-img
+    display: block
+    margin: 24px auto 0
+
+  .client-info
+    width: 1440px
+    height: 698px
+    padding-top: 96px
+
+    &-solves
+      color: $text-color__third
+      margin-bottom: 24px
+
+      .our-clients
+        @include font-size(12px, 600)
+        text-transform: uppercase
+
+      .our-solves
+        @include font('Circe')
+        @include font-size(40px, 800)
+
+    .client-problems
+      @include font('Circe')
+      @include font-size(24px)
+      max-width: 461px
+      margin-bottom: 53px
+
+    .slider-wrap
+      display: flex
+      gap: 25px
+      overflow-x: scroll
+
+      .slider
+        padding: $slider__padding
+        border: $border__primary
+        border-radius: $border-radius__slider
+        width: 300px
+        height: 320px
+        flex-shrink: 0
