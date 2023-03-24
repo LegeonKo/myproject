@@ -15,7 +15,7 @@ body
       position: relative
 
       .upper-banner
-        @include background
+        @include background__primary
         padding-top: 93px
         height: 806px
 
@@ -207,3 +207,16 @@ body
 
           &_empty
             background-color: #efefef
+
+    .app-personalisation
+      @include background__secondary
+      height: 689px
+
+      &-wrap
+        margin-right: 120px
+        display: flex
+        justify-content: right
+        align-items: center
+
+        .app-personalisation-content
+          width: 515px

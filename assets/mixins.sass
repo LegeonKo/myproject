@@ -6,8 +6,14 @@
   font-size: $font-size
   font-weight: $font-weight
 
-@mixin background
+@mixin background__primary
   background: $background-color__primary
   background-image: url("/assets/img/background-img-left.png"), url("/assets/img/background-img-right.png")
   background-repeat: no-repeat
   background-position: bottom left, bottom right
+
+@mixin background__secondary
+  background: $background-color__fourth
+  background-image: url("/assets/img/hand-phone-img.png"), url("/assets/img/big-ellipse.png"), url("/assets/img/small-ellipse.png")
+  background-repeat: no-repeat
+  background-position: 203px 113px, 87px 397px, 506px 135px
