@@ -1,0 +1,72 @@
+.client-info
+  width: 1440px
+  height: 698px
+  padding-top: 96px
+
+  &-solves
+    color: $text-color__third
+    margin-bottom: 24px
+
+    .our-clients
+      @include font-size(12px, 600)
+      text-transform: uppercase
+
+    .our-solves
+      @include font('Circe')
+      @include font-size(40px, 800)
+      padding-bottom: 64px
+
+  .slider-wrap
+    display: flex
+    gap: 25px
+    overflow-x: scroll
+
+    .slider
+      @include font('Circe')
+      padding: $slider__padding
+      border: $border__primary
+      border-radius: $border-radius__slider
+      width: 300px
+      height: 320px
+      flex-shrink: 0
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: space-between
+      color: $text-color__secondary
+
+      &__title
+        @include font-size(24px, 700)
+        text-transform: uppercase
+        margin-bottom: 4px
+
+      &__description
+        margin: 0 0 24px 0
+        line-height: 1.5
+
+      &__link
+        display: block
+        width: 100%
+        text-decoration: none
+        border: $border-_primary
+        color: $text-color__secondary
+        font-size: 14px
+        text-align: center
+        border-radius: 12px
+        padding: 12px 0
+
+
+      &_motul
+        background-color: #f57070
+
+      &_liqui
+        background-color: #486edc
+
+      &_sika
+        background-color: #f5bc4e
+
+      &_knauf
+        background-color: #5ab5e8
+
+      &_empty
+        background-color: #efefef

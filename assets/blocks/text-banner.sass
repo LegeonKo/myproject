@@ -1,0 +1,52 @@
+.text-banner
+  height: 839px
+  background-color: $background-color__third
+  padding-top: 96px
+
+  &-wrap
+    padding-left: 128px
+
+    .text-banner__header
+      @include font-size(12px)
+      text-transform: uppercase
+      color: $text-color__primary
+      margin-bottom: 12px
+
+    .text-banner__content
+      @include font('Circe')
+      @include font-size(32px)
+      color: $text-color__secondary
+      width: 838px
+      margin-bottom: 72px
+
+      &-style
+        @include font-size(32px, 700)
+        color: $text-color__primary
+
+  &-info
+    display: flex
+    justify-content: center
+    gap: 40px
+
+    .content-box
+      padding: 24px
+      border: $border__primary
+      border-radius: $border-radius__secondary
+      color: $text-color__secondary
+      @include font('Circe')
+      @include font-size(24px)
+
+      &__header
+        @include font-size(24px, 700)
+        display: flex
+        gap: 11px
+        margin-bottom: 24px
+
+      &-img__first
+        margin-top: -7px
+
+      &-img__second
+        margin-top: -4px
+
+      &__text
+        max-width: 335px
