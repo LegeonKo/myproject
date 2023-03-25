@@ -7,6 +7,38 @@
     display: flex
     justify-content: right
     align-items: center
+    height: 100%
 
     .app-personalisation-content
       width: 515px
+
+      &__title
+        @include font-size(12px, 600)
+        text-transform: uppercase
+
+      &__header
+        @include font-size(40px, 800)
+        @include font('Circe')
+        margin-bottom: 16px
+
+      &__text
+        @include font-size(24px)
+        @include font('Circe')
+        margin-bottom: 32px
+
+      &__subheader
+        @include font-size(24px, 700)
+        @include font('Circe')
+        margin-bottom: 4px
+
+      &__subtext
+        @include font('Circe')
+        @include font-size(16px)
+        margin-bottom: 16px
+
+      &__line
+        width: 515px
+        height: 0
+        border: $border__secondary
+        opacity: 0.2
+        margin-bottom: 16px
