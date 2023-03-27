@@ -1,5 +1,8 @@
 .app-personalisation
-  @include background__secondary
+  background: $background-color__fourth
+  background-image: url("/assets/img/hand-phone-second.png"), url("/assets/img/big-ellipse.png"), url("/assets/img/ellipse.png"), url("/assets/img/small-ellipse.png")
+  background-repeat: no-repeat
+  background-position: left bottom, 394px 402px, 506px 135px, 105px 144px
   height: 689px
 
   &-wrap
@@ -40,5 +43,5 @@
         width: 515px
         height: 0
         border: $border__secondary
-        opacity: 0.2
+        opacity: $border-opacity
         margin-bottom: 16px

@@ -1,0 +1,19 @@
+.control-panel
+  height: 689px
+  background-color: $background-color__third
+  background-image: url("/assets/img/iphone.png"), url("/assets/img/macbook.png"), url("/assets/img/big-ellipse.png"), url("/assets/img/ellipse-mac.png")
+  background-repeat: no-repeat
+  background-position: 814px 119px, 669px 73px, 720px 158px, 1159px 511px
+  padding-top: 84px
+
+  &-description
+    max-width: 515px
+    margin-left: 128px
+
+    &__header
+      @include font('Circe')
+      @include font-size(40px, 800)
+      color: $text-color__secondary
+
+    .header-indent
+      margin-bottom: 32px

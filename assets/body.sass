@@ -10,6 +10,28 @@ body
   margin: 0
   @include font
 
+  .content-header
+    @include font('Circe')
+    @include font-size(24px, 700)
+    color: $text-color__secondary
+    margin-bottom: 4px
+
+  .content-text
+    @include font('Circe')
+    color: $text-color__secondary
+
+  .content-line__primary, .content-line__secondary
+    height: 0
+    border: $border__primary
+    opacity: $border-opacity
+    margin: 16px 0
+
+  .content-line__primary
+    width: 398px
+
+  .content-line__secondary
+    width: 515px
+
   .subheader
     @include font-size(12px)
     color: $text-color__primary
@@ -32,3 +54,6 @@ body
     @import "blocks/client-info"
     @import "blocks/app-personalisation"
     @import "blocks/app-info"
+    @import "blocks/control-panel"
+    @import "blocks/integration"
+    @import "blocks/additional"

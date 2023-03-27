@@ -1,0 +1,26 @@
+.integration
+  height: 559px
+  background: $background-color__secondary
+
+  &-wrapper
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+
+    &__container
+      .integration-tittle
+        @include font-size(12px, 600)
+        text-transform: uppercase
+
+      .integration-header
+        @include font-size(40px, 800)
+        @include font('Circe')
+        margin-bottom: 32px
+        color: $text-color__third
+
+      .integration-content
+        @include font('Circe')
+        @include font-size(24px)
+        color: $text-color__fourth
+        max-width: 515px
