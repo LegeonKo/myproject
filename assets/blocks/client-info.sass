@@ -12,57 +12,51 @@
       @include font-size(40px, 800)
       padding-bottom: 64px
 
-  .slider-wrap
+  .slider__primary
+    @include font('Circe')
+    padding: $slider__padding
+    border: $border__primary
+    border-radius: $border-radius__slider
+    width: 300px
+    height: 320px
+    flex-shrink: 0
     display: flex
-    gap: 25px
-    overflow-x: scroll
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-between
+    color: $text-color__secondary
 
-    .slider
-      @include font('Circe')
-      padding: $slider__padding
-      border: $border__primary
-      border-radius: $border-radius__slider
-      width: 300px
-      height: 320px
-      flex-shrink: 0
-      display: flex
-      flex-direction: column
-      align-items: flex-start
-      justify-content: space-between
-      color: $text-color__secondary
+  .slider__title
+    @include font-size(24px, 700)
+    text-transform: uppercase
+    margin-bottom: 4px
 
-      &__title
-        @include font-size(24px, 700)
-        text-transform: uppercase
-        margin-bottom: 4px
+  .slider__description
+    margin: 0 0 24px 0
+    line-height: 1.5
 
-      &__description
-        margin: 0 0 24px 0
-        line-height: 1.5
+  .slider__link
+    display: block
+    width: 100%
+    text-decoration: none
+    border: $border-_primary
+    color: $text-color__secondary
+    font-size: 14px
+    text-align: center
+    border-radius: 12px
+    padding: 12px 0
 
-      &__link
-        display: block
-        width: 100%
-        text-decoration: none
-        border: $border-_primary
-        color: $text-color__secondary
-        font-size: 14px
-        text-align: center
-        border-radius: 12px
-        padding: 12px 0
+  .slider_motul
+    background-color: #f57070
 
+  .slider_liqui
+    background-color: #486edc
 
-      &_motul
-        background-color: #f57070
+  .slider_sika
+    background-color: #f5bc4e
 
-      &_liqui
-        background-color: #486edc
+  .slider_knauf
+    background-color: #5ab5e8
 
-      &_sika
-        background-color: #f5bc4e
-
-      &_knauf
-        background-color: #5ab5e8
-
-      &_empty
-        background-color: #efefef
+  .slider_empty
+    background-color: #efefef

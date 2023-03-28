@@ -2,3 +2,54 @@
   height: 754px
   background: $background-color__fourth
   padding-top: 96px
+
+  &-container
+    margin-left: 128px
+
+    &__title
+      @include font-size(12px, 600)
+      text-transform: uppercase
+
+    &__header
+      @include font-size(40px, 800)
+      @include font('Circe')
+      margin-bottom: 32px
+      color: $text-color__third
+
+    &__content
+      @include font('Circe')
+      @include font-size(24px)
+      color: $text-color__fourth
+      max-width: 461px
+
+  .slider__secondary
+    @include font('Circe')
+    display: flex
+    flex-shrink: 0
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-end
+    padding: $slider__padding
+    border: $border__primary
+    border-radius: $border-radius__slider
+    width: 300px
+    height: 253px
+    color: $text-color__third
+    background-color: $background-color__secondary
+    position: relative
+    margin-top: 106px
+
+    .slider__secondary-header
+      @include font-size(24px, 700)
+      margin-bottom: 12px
+
+    .slider__secondary-text
+      height: 72px
+
+    .slider__secondary-img
+      position: absolute
+      display: inline-block
+      left: 0
+      right: 0
+      margin: 0 auto
+      bottom: 180px
