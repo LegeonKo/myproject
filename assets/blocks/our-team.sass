@@ -1,0 +1,29 @@
+.our-team
+  height: 698px
+  background-color: $background-color__secondary
+  padding-top: 76px
+
+  &-content
+    margin-left: 108px
+    padding-bottom: 49px
+
+    &__title
+      @include font-size(12px, 600)
+      text-transform: uppercase
+
+    &__header
+      @include font-size(40px, 800)
+      @include font('Circe')
+      margin-bottom: 24px
+      color: $text-color__third
+
+    &__description
+      @include font('Circe')
+      @include font-size(24px)
+      color: $text-color__fourth
+      max-width: 533px
+
+  &-photos
+    display: flex
+    gap: 30px
+    justify-content: center

@@ -1,0 +1,58 @@
+.money
+  height: 658px
+  background-color: $background-color__third
+  background-image: url("/assets/img/coins.png")
+  background-repeat: no-repeat
+  background-position: left 140px
+  color: $text-color__secondary
+  padding-top: 70px
+
+
+  .money-line
+    width: 235px
+    border-top: 3px solid white
+    padding-top: 20px
+
+  .self-padding
+    padding-top: 15px
+
+  &-wrap
+    display: flex
+    height: 100%
+    flex-direction: column
+
+    .money-payed-wrap
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      .money-payed
+        @include font-size(120px, 700)
+        @include font('Inter')
+        text-align: center
+
+        .big-symbol
+          @include font-size(150px, 800)
+          @include font('Circe')
+          padding-left: 25px
+
+    .money-info-wrap
+      display: flex
+      justify-content: center
+      gap: 115px
+      padding-top: 65px
+
+      .money-info-text
+        @include font-size(64px, 700)
+        @include font('Circe')
+        position: relative
+
+      .money-info__img
+        display: inline-block
+        position: absolute
+        right: 0
+        bottom: 25px
+
+      .chef-img
+        left: 0
+        margin: 0 auto

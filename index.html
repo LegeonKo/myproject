@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/owlcarousel/owl.theme.default.min.css">
     <title></title>
 </head>
 <body>
@@ -67,7 +69,7 @@
             <div class="subheader subheader-color">наши клиенты</div>
             <div class="our-solves">Мы решили эти задачи</div>
         </div>
-        <div class="slider-wrap">
+        <div class="owl-carousel">
             <div class="slider__primary slider_motul">
                 <svg xmlns="http://www.w3.org/2000/svg" width="92" height="21" fill="none">
                     <path fill="#fff"
@@ -210,13 +212,15 @@
             <div class="additional-container__title">Дополнительные возможности</div>
             <div class="additional-container__header">Модули, которые можно подключить</div>
             <div class="additional-container__content">Текст-описание небольшое, но очень интересное, возможно в
-                несколько строк, но тут уж как наберется.</div>
+                несколько строк, но тут уж как наберется.
+            </div>
         </div>
-        <div class="slider-wrap">
+        <div class="owl-carousel">
             <div class="slider__secondary">
                 <img src="/assets/img/friend.png" class="slider__secondary-img" alt="">
                 <div class="slider__secondary-header">Пригласи друга</div>
-                <div class="slider__secondary-text">Возможность начисления дополнительных баллов с помощью промокода</div>
+                <div class="slider__secondary-text">Возможность начисления дополнительных баллов с помощью промокода
+                </div>
             </div>
             <div class="slider__secondary">
                 <img src="/assets/img/registration.png" class="slider__secondary-img" alt="">
@@ -239,7 +243,57 @@
             </div>
         </div>
     </div>
+    <div class="money">
+        <div class="money-wrap">
+            <div class="money-payed-wrap">
+                <div class="money-payed"><span class="big-symbol">></span> <span>112 000 000</span> <span class="big-symbol">₽</span></div>
+                <div class="money-line self-padding">выплачено призового фонда</div>
+            </div>
+            <div class="money-info-wrap">
+                <div class="money-info-wrap__content">
+                    <div class="money-info-text">> 6 лет</div>
+                    <div class="money-line">мотивация работает</div>
+                </div>
+                <div class="money-info-wrap__content">
+                    <div class="money-info-text">6 <img src="/assets/img/chef.png" class="money-info__img chef-img" alt="chef"></div>
+                    <div class="money-line">постоянных клиентов</div>
+                </div>
+                <div class="money-info-wrap__content">
+                    <div class="money-info-text">13 675 <img src="/assets/img/fire.png" class="money-info__img" alt="fire"></div>
+                    <div class="money-line">постоянных участников платформы</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-cost">
+
+    </div>
+    <div class="our-team">
+        <div class="our-team-content">
+            <div class="our-team-content__title headers-color">Наша команда</div>
+            <div class="our-team-content__header">Люди, которые пекут Пряник</div>
+            <div class="our-team-content__description">Текст-описание небольшое, но очень интересное, возможно в несколько строк</div>
+        </div>
+        <div class="our-team-photos">
+            <img src="/assets/img/team-photos.png" alt="team">
+            <img src="/assets/img/team-photos.png" alt="team">
+            <img src="/assets/img/team-photos.png" alt="team">
+            <img src="/assets/img/team-photos.png" alt="team">
+        </div>
+    </div>
+    <div class="questions">
+        <div class="questions-wrapper">
+            <div class="questions-header">Остались вопросы?</div>
+            <img src="" alt="">
+            <div class="owner-name">Игорь Максимов</div>
+            <div class="owner-phone">+7(916)838-07-11</div>
+            <a href="mailto:im@12.digital">im@12.digital</a>
+            <a href="">Напишите Игорю в Telegram</a>
+        </div>
+    </div>
 </div>
+<script src="/jquery.min.js"></script>
+<script src="/owlcarousel/owl.carousel.min.js"></script>
 <script type="module" src="/app.js"></script>
 </body>
 </html>
