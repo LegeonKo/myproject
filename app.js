@@ -1,13 +1,13 @@
 import '/assets/app.sass'
 import '/assets/fonts/stylesheet.css'
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         startPosition: 2,
-        autoWidth:true,
+        autoWidth: true,
         center: true,
-        items:4,
-        loop:true,
-        margin:25
+        items: 4,
+        loop: true,
+        margin: 20
     });
 });
