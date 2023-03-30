@@ -1,11 +1,36 @@
 .questions
   @include background__primary
+  @include font('Circe')
   height: 698px
   color: $text-color__secondary
+  padding-top: 115px
 
   &-wrapper
     display: flex
     height: 100%
     flex-direction: column
     align-items: center
-    justify-content: center
+
+    &__header
+      @include font-size(40px, 800)
+      margin-bottom: 18px
+
+    &__img
+      margin-bottom: 23px
+
+    &__owner-name
+      @include font-size(20px, 800)
+      margin-bottom: 8px
+
+    &__owner-phone
+      margin-bottom: 5px
+
+    &__mail-to
+      text-decoration-line: underline
+
+    &__button
+      @include font('Inter')
+      margin-top: 45px
+      padding: 13.5px 16px
+      background: $background-color__secondary
+      color: #3c6fe4

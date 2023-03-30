@@ -8,6 +8,6 @@ $(document).ready(function () {
         center: true,
         items: 4,
         loop: true,
-        margin: 20
+        margin: 25
     });
 });
